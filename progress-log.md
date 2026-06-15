@@ -5,3 +5,5 @@
 **What I built:** learning-journal repository on GitHub, first commit pushed
 **What confused me:** TryHackMe signup had a browser error, fixed by switching to Edge
 **Next step:** Start Phase 1 — Linux command line basics
+
+Next step: Phase 1 — Linux command line basics via TryHackMe
