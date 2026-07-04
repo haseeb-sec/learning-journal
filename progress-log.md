@@ -49,3 +49,18 @@ made sense.
 
 **Next step:** Complete Linux Fundamentals Part 1 room on TryHackMe 
 formally, then start Python basics.
+
+## Linux Fundamentals Part 1 — TryHackMe — 07/04/2026
+
+**What I completed:** Linux Fundamentals Part 1 room on TryHackMe. 
+Learned to run essential commands on an interactive terminal.
+
+**Points earned:** 88
+
+**Commands I now understand:** pwd, ls, cd, echo, cat, grep, 
+chmod, mkdir, touch, cp, mv, rm, ip addr, ping, ss -tuln, ss -tn
+
+**What confused me:** Nothing major — everything covered in 
+our sessions came together in the room questions.
+
+**Next step:** Python basics
