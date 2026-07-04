@@ -19,3 +19,9 @@ Next step: Phase 1 — Linux command line basics via TryHackMe
 **What I built:** Created myfile.txt, changed permissions from 777 to 644 independently
 **What confused me:** Being inside folder1 and trying to ls -l folder1 — understood the mistake
 **Next step:** Linux file operations — copying, moving, deleting files
+
+## Session 4 — 04/07/2026
+**What I learned:** Linux file operations — mkdir, touch, echo, cp, mv, rm, rm -r
+**What I built:** Created, copied, moved, and deleted files and folders independently
+**What confused me:** Tried to cd into folder3 while inside practice folder — understood the mistake
+**Next step:** Linux networking commands — ping, ifconfig, netstat
