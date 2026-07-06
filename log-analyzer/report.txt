@@ -1,0 +1,12 @@
+=== LOG ANALYZER REPORT ===
+Total unique IPs: 4
+
+--- ALL IPs ---
+192.168.1.1 - 6 requests
+54.36.148.184 - 3 requests
+10.0.0.5 - 5 requests
+172.16.0.1 - 2 requests
+
+--- SUSPICIOUS IPs ---
+192.168.1.1 - 6 requests
+10.0.0.5 - 5 requests
