@@ -74,3 +74,13 @@ our sessions came together in the room questions.
 **What confused me:** Nothing in particular. Everything was understandable, as this was mainly a revision of concepts I had already learned.
 
 **Next Step:** Build a real security tool in Python by combining everything I learned today.
+
+## Python Project - Log Analyzer - 07/06/2026
+
+**What I completed:** Built a CLI-based Log Analyzer in Python that reads a real `access.log` file, extracts IP addresses, counts the total requests made by each IP, identifies suspicious IPs based on a configurable request threshold, and generates a clean `report.txt` file.
+
+**What I learned:** I learned how to build a complete Python program by combining variables, loops, conditionals, functions, dictionaries, and file handling. I learned how to read a log file line by line, extract IP addresses from each log entry, count the number of requests made by each IP, identify suspicious IPs based on a threshold, and automatically generate a well-formatted report. I also learned how to organize code into reusable functions and build a practical CLI-based security tool.
+
+**What confused me:** Nothing in particular. The project helped reinforce the Python concepts I revised earlier, and everything worked as expected after testing it with a sample `access.log` file.
+
+**Next Step:** Build a Python port scanner from scratch.
