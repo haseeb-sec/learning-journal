@@ -64,3 +64,13 @@ chmod, mkdir, touch, cp, mv, rm, ip addr, ping, ss -tuln, ss -tn
 our sessions came together in the room questions.
 
 **Next step:** Python basics
+
+## Python Basics - 07/06/2026
+
+**What I completed:** Variables, Data Types, Loops, Conditionals, Functions, and File Reading. I revised these concepts because I had studied them before, but a short revision was necessary.
+
+**What I learned:** I learned what variables are and how to use them, what data types are and the kind of data each type stores. I also learned what loops are, how they actually work, and implemented them. I revised conditionals, functions, how to create and use them, and how to create, open, and read files in Python.
+
+**What confused me:** Nothing in particular. Everything was understandable, as this was mainly a revision of concepts I had already learned.
+
+**Next Step:** Build a real security tool in Python by combining everything I learned today.
