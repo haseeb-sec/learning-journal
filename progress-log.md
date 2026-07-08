@@ -84,3 +84,19 @@ our sessions came together in the room questions.
 **What confused me:** Nothing in particular. The project helped reinforce the Python concepts I revised earlier, and everything worked as expected after testing it with a sample `access.log` file.
 
 **Next Step:** Build a Python port scanner from scratch.
+
+Updating the progress log, kindly provide me the next step:
+
+## Python Project - Port Scanner - 07/08/2026
+
+**What I completed:** Built a CLI-based Python Port Scanner that scans a target IP address over a specified range of ports, identifies which ports are open, displays the results in the terminal, and automatically generates a `scan_report.txt` file containing the scan results.
+
+**What I learned:** I learned how to use Python's `socket` module to establish TCP connections and determine whether a port is open or closed. I also learned how to scan a range of ports using loops, organize the program into reusable functions, handle connection timeouts, store the discovered open ports in a list, and automatically generate a well-formatted report containing the scan results.
+
+**What confused me:** Understanding the `socket` module and the networking terminologies such as `AF_INET` and `SOCK_STREAM` was initially confusing because they were completely new to me. After discussing these concepts with Claude, I understood that a socket is the endpoint used to establish a network connection, `AF_INET` specifies that the connection uses the IPv4 address family, and `SOCK_STREAM` specifies that the connection uses the TCP protocol. Once I understood how these components work together, the overall logic of the port scanner became much clearer.
+
+**Next Step:** Adding three improvements to the log analyzer tool:
+
+1. Bot detection: flag lines containing "Bot" automatically
+2. Failed login detection: flag IPs with multiple 401 responses
+3. Command line input: accept any filename instead of hardcoded access.log
