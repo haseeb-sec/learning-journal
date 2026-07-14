@@ -1,3 +1,5 @@
+import sys
+
 # Function for reading the file line by line, and getting the total lines
 
 def read_log(filename):
@@ -33,9 +35,37 @@ def find_suspicious(ip_counts, threshold=3):
 
     return suspicious
 
+# Detecting the bots and crawler etc
+def detect_bots(lines):
+    bots = []
+    for line in lines:
+        if "Bot" in line or "bot" in line or "crawler" in line or "spider" in line:
+            ip = get_ip(line)
+            if ip not in bots:
+                bots.append(ip)
+    return bots
+
+# Detecting the suspicious logins
+
+def detect_failed_logins(lines, threshold=3):
+    failed = {}
+    for line in lines:
+        if "401" in line:
+            ip = get_ip(line)
+            if ip in failed:
+                failed[ip] += 1
+            else:
+                failed[ip] = 1
+    suspicious_logins = []
+    for ip, count in failed.items():
+        if count >= threshold:
+            suspicious_logins.append(ip + " - " + str(count) + " failed attempts")
+    return suspicious_logins
+
+
 # Generating report 
 
-def generate_report(ip_counts, suspicious):
+def generate_report(ip_counts, suspicious, bots, failed_logins):
     with open("report.txt", "w") as file:
         file.write("=== LOG ANALYZER REPORT ===\n")
         file.write("Total unique IPs: " + str(len(ip_counts)) + "\n")
@@ -45,10 +75,28 @@ def generate_report(ip_counts, suspicious):
         file.write("\n--- SUSPICIOUS IPs ---\n")
         for s in suspicious:
             file.write(s + "\n")
+        file.write("\n--- BOT IPs DETECTED ---\n")
+        for bot in bots:
+            file.write(bot + "\n")
+        file.write("\n--- Suspicious Logins ---\n")
+        for f in failed_logins:
+            file.write(f + "\n")
     print("Report saved to report.txt")
 
 # Run the analyzer
-lines = read_log("access.log")
+if len(sys.argv) < 2:
+    print("Usage: python analyzer.py <logfile>")
+    sys.exit()
+
+filename = sys.argv[1]
+lines  = read_log(filename)
+
 ip_counts = count_ips(lines)
 suspicious = find_suspicious(ip_counts)
-generate_report(ip_counts, suspicious)
+bots = detect_bots(lines)
+failed_logins = detect_failed_logins(lines)
+generate_report(ip_counts, suspicious, bots, failed_logins)
+
+
+
+
