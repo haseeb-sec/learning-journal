@@ -32,7 +32,7 @@ My goal is to become an AI Security Engineer by developing a strong foundation i
 A CLI-based Python security tool that analyzes web server log files, counts requests by IP address, detects suspicious activity, identifies bots and crawlers, flags repeated failed login attempts, and generates a detailed security report automatically.
 
 ### Port Scanner
-A CLI-based Python tool that scans a target IP address for open ports across a specified range and generates a scan report automatically.
+a CLI-based Python port scanner that scans a target IPv4 address over a specified range of TCP ports. It uses multithreading to perform scans more efficiently, identifies which ports are open, displays the results in the terminal, and automatically generates a `scan_report.txt` file containing the scan results.
 
 ## Learning Philosophy
 
