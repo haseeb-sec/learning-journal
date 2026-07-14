@@ -29,7 +29,7 @@ My goal is to become an AI Security Engineer by developing a strong foundation i
 ## Projects
 
 ### Log Analyzer
-A CLI-based Python tool that reads a web server `access.log` file, extracts IP addresses, counts requests made by each IP, identifies suspicious IPs based on a configurable threshold, and generates a clean security report automatically.
+A CLI-based Python security tool that analyzes web server log files, counts requests by IP address, detects suspicious activity, identifies bots and crawlers, flags repeated failed login attempts, and generates a detailed security report automatically.
 
 ### Port Scanner
 A CLI-based Python tool that scans a target IP address for open ports across a specified range and generates a scan report automatically.

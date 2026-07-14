@@ -100,3 +100,13 @@ Updating the progress log, kindly provide me the next step:
 1. Bot detection: flag lines containing "Bot" automatically
 2. Failed login detection: flag IPs with multiple 401 responses
 3. Command line input: accept any filename instead of hardcoded access.log
+
+## Python Project - Log Analyzer Update - 07/14/2026
+
+**What I improved:** Enhanced the Log Analyzer by adding support for command-line arguments using the `sys` module, allowing the program to analyze any log file specified by the user instead of relying on a hardcoded filename. I also added bot and crawler detection by identifying common user-agent keywords such as `Bot`, `bot`, `crawler`, and `spider`. In addition, I implemented failed login detection by analyzing HTTP `401 Unauthorized` responses and flagging IP addresses that exceeded a configurable threshold of failed login attempts. Finally, I updated the generated `report.txt` to include dedicated sections for detected bots and suspicious login attempts, making the report more comprehensive and useful.
+
+**What I learned:** I learned how to use the `sys` module and `sys.argv` to accept command-line arguments, making Python scripts more flexible and reusable. I strengthened my understanding of dictionaries by using them to count failed login attempts for each IP address and practiced creating multiple detection functions that each perform a specific task. I also learned how basic security monitoring can be performed by analyzing web server logs for suspicious request patterns, automated bots, crawlers, and repeated authentication failures. This project also reinforced the importance of writing modular, reusable code by separating each detection feature into its own function.
+
+**What confused me:** Understanding command-line arguments with `sys.argv` was initially new because I had only executed Python scripts by clicking the Run button in Visual Studio Code. After experimenting with the program and learning how arguments are passed from the command line, I understood how Python receives user input through `sys.argv` and why this approach makes CLI tools more practical and reusable.
+
+**Next Step:** Add multi-threading to the port scanner.
