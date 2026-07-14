@@ -110,3 +110,14 @@ Updating the progress log, kindly provide me the next step:
 **What confused me:** Understanding command-line arguments with `sys.argv` was initially new because I had only executed Python scripts by clicking the Run button in Visual Studio Code. After experimenting with the program and learning how arguments are passed from the command line, I understood how Python receives user input through `sys.argv` and why this approach makes CLI tools more practical and reusable.
 
 **Next Step:** Add multi-threading to the port scanner.
+
+## Python Project - Port Scanner (Multithreading Upgrade) - 07/14/2026
+
+**What I completed:** Improved my CLI-based Python Port Scanner by implementing multithreading using Python's `threading` module. Instead of scanning ports one by one, the scanner now creates a separate thread for each port, allowing multiple ports to be scanned concurrently. I also updated the project documentation to reflect the new functionality and features.
+
+**What I learned:** I learned the fundamentals of multithreading in Python and how it can significantly improve the performance of a port scanner. I learned how to create and manage threads using `threading.Thread()`, how the `target` and `args` parameters work, why `start()` is required to begin a thread, why `join()` is used to wait for all threads to finish, and how multiple threads can share the same `open_ports` list to store scan results. I also learned the difference between creating a thread and actually starting it, and how multithreading allows multiple ports to be scanned at the same time instead of sequentially.
+
+**What confused me:** The multithreading concepts were completely new to me, especially understanding what a thread actually is, how multiple threads run concurrently, why a separate function was needed for each thread, and the purpose of `threading.Thread()`, `target`, `args`, `start()`, and `join()`. These concepts were initially difficult to visualize, but after studying them in detail and understanding each component step by step, the overall workflow became much clearer.
+
+**Next Step:** Continue improving the Port Scanner by adding more practical features and gradually learning more advanced Python concepts used in cybersecurity tools.
+
