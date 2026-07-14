@@ -14,5 +14,5 @@ Total unique IPs: 4
 --- BOT IPs DETECTED ---
 54.36.148.184
 
---- Suspicioud Logins ---
-10.0.0.5 - 4failed attempts
+--- Suspicious Logins ---
+10.0.0.5 - 4 failed attempts
