@@ -1,0 +1,13 @@
+=== WEB SECURITY REPORT ===
+Target: https://python.org
+
+Status: 200 - OK
+Server: nginx
+X-Powered-By: Not disclosed
+--- SECURITY HEADERS PRESENT ---
+[OK] X-Frame-Options
+[OK] Strict-Transport-Security
+--- SECURITY HEADERS MISSING ---
+[MISSING] X-Content-Type-Options
+[MISSING] Content-Security-Policy
+[MISSING] X-XSS-Protection
