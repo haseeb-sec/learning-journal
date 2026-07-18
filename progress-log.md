@@ -85,7 +85,6 @@ our sessions came together in the room questions.
 
 **Next Step:** Build a Python port scanner from scratch.
 
-Updating the progress log, kindly provide me the next step:
 
 ## Python Project - Port Scanner - 07/08/2026
 
@@ -119,5 +118,14 @@ Updating the progress log, kindly provide me the next step:
 
 **What confused me:** The multithreading concepts were completely new to me, especially understanding what a thread actually is, how multiple threads run concurrently, why a separate function was needed for each thread, and the purpose of `threading.Thread()`, `target`, `args`, `start()`, and `join()`. These concepts were initially difficult to visualize, but after studying them in detail and understanding each component step by step, the overall workflow became much clearer.
 
-**Next Step:** Continue improving the Port Scanner by adding more practical features and gradually learning more advanced Python concepts used in cybersecurity tools.
+**Next Step:** Build a web request tool using Python's requests library.
 
+## Python Project - Web Security Header Analyzer - 07/18/2026
+
+**What I completed:** Built a CLI-based Web Security Header Analyzer in Python that accepts a target URL as a command-line argument, sends an HTTP/HTTPS request to the website, checks the HTTP status code, analyzes common HTTP security headers, detects server software and backend technology disclosure, and automatically generates a professional `web_report.txt` file. I also learned how to use a Python virtual environment and manage project dependencies using a `requirements.txt` file.
+
+**What I learned:** I learned how to use the `requests` library to communicate with web servers and process HTTP responses. I learned how to work with command-line arguments using `sys.argv`, retrieve and analyze HTTP response headers, check common security headers, interpret HTTP status codes, detect server and technology disclosure through response headers, handle connection errors using `try` and `except`, and organize the project into reusable functions. I also learned the purpose of Python virtual environments, why they are important for dependency management, and how to generate a `requirements.txt` file for reproducible projects.
+
+**What confused me:** Several web-related concepts were new to me, especially understanding HTTP request and response objects, how response headers are stored and accessed, why security headers are important, how command-line arguments work through `sys.argv`, and how a virtual environment isolates project dependencies. These concepts were unfamiliar at first, but after implementing them step by step and testing the tool against real websites, they became much easier to understand.
+
+**Next Step:** Basic shell scripts automating real tasks on Linux.
