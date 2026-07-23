@@ -1,8 +1,9 @@
+#!/bin/bash
+
 # Note: This script is designed for Linux systems.
 # Run on a Linux server or TryHackMe lab for full output.
 
 
-#!/bin/bash
 echo "=== SECURITY AUDIT REPORT ==="
 echo "Date: $(date)"
 echo ""
