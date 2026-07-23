@@ -140,3 +140,24 @@ our sessions came together in the room questions.
 
 **Next Step:** Complete Networking Fundamentals, the final topic of Phase 1, before moving into Core Cybersecurity and building more advanced security tools.
 
+## Development Environment Upgrade - WSL2 Ubuntu - 07/23/2026
+
+**What I completed:** Upgraded my development environment from Git Bash to a full Linux environment by installing Ubuntu 26.04 LTS through Windows Subsystem for Linux (WSL2). Before installing WSL2, I repaired my Windows 10 installation using an in-place repair upgrade, which restored the missing Windows optional features required for WSL2 while preserving my files, applications, and personal settings. After the repair, I enabled WSL2, installed Ubuntu, created my Linux user account, updated the operating system, installed the latest WSL components, verified Python 3.14 and Git inside Ubuntu, and configured Visual Studio Code to develop directly inside the Linux environment using the Remote - WSL extension.
+
+**What I learned:** I learned the difference between Git Bash and a real Linux environment. I now understand that WSL2 provides a genuine Linux kernel running alongside Windows, allowing me to use the same development environment commonly used on servers and by professional software engineers. I learned how Linux and Windows filesystems interact through `/mnt`, how to navigate the Linux filesystem, how WSL integrates with Visual Studio Code, and why developing directly inside Ubuntu provides a more realistic environment for Python, cybersecurity, automation, and future AI development.
+
+**What confused me:** Initially, WSL2 could not be installed because my Windows installation was missing the required optional features. I spent time troubleshooting feature errors, DISM commands, and virtualization settings before realizing that the Windows installation itself needed to be repaired. After completing an in-place Windows repair upgrade, all required features became available and the WSL2 installation completed successfully. I also learned the difference between PowerShell and the Ubuntu terminal and when each should be used.
+
+**Environment Changes:**
+
+- Repaired Windows 10 using an in-place upgrade
+- Installed Windows Subsystem for Linux (WSL2)
+- Installed Ubuntu 26.04 LTS
+- Configured Linux user account
+- Updated Ubuntu packages
+- Installed and verified Python 3.14
+- Installed and verified Git 2.53
+- Connected Visual Studio Code to WSL2
+- Confirmed WSL Version 2 as the default environment
+
+**Next Step:** Continue Phase 1 by completing Networking Fundamentals and begin developing all future Linux, Python, and cybersecurity projects directly inside Ubuntu using WSL2 and Visual Studio Code.
