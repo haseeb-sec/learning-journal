@@ -41,6 +41,10 @@ A CLI-based Python port scanner that scans a target IPv4 address over a specifie
 
 A CLI-based Python web security tool that sends HTTP requests to a target website, checks HTTP status codes, analyzes common security headers, detects server and backend technology disclosure, and generates a professional `web_report.txt` file containing the security assessment.
 
+### Shell Scripts
+
+A collection of Linux Bash scripts developed to automate common system administration and cybersecurity tasks. This folder includes scripts for gathering system information, performing basic security audits, analyzing web server log files, and learning the fundamentals of Bash scripting, Linux automation, and command-line tools commonly used by security professionals.
+
 ## Learning Philosophy
 
 I believe practical experience is more valuable than simply completing courses. Every project in this repository represents something I have learned, implemented, tested, and documented. My goal is to build a portfolio that demonstrates continuous growth, technical skills, and the ability to solve real-world cybersecurity problems through hands-on development.

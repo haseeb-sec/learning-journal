@@ -129,3 +129,14 @@ our sessions came together in the room questions.
 **What confused me:** Several web-related concepts were new to me, especially understanding HTTP request and response objects, how response headers are stored and accessed, why security headers are important, how command-line arguments work through `sys.argv`, and how a virtual environment isolates project dependencies. These concepts were unfamiliar at first, but after implementing them step by step and testing the tool against real websites, they became much easier to understand.
 
 **Next Step:** Basic shell scripts automating real tasks on Linux.
+
+## Bash Scripting - Linux Security Automation - 07/23/2026
+
+**What I completed:** Built my first Bash scripts for Linux automation and security tasks. I created `myscript.sh` to understand the basics of shell scripting, `sysinfo.sh` to collect system information such as the hostname, current user, IP addresses, open ports, and disk usage, `security_audit.sh` to perform a basic Linux security audit by checking logged-in users, recent login attempts, open ports, and files with full permissions, and `log_analyzer.sh` to analyze web server log files by counting total requests, identifying the most active IP addresses, counting POST requests, and detecting 404 errors.
+
+**What I learned:** I learned what Bash is and why it is widely used by Linux administrators and cybersecurity professionals for automation. I learned how to create executable shell scripts, work with variables, use command-line arguments through `$1`, write conditional statements using `if`, connect commands with pipes (`|`), and process text using tools such as `awk`, `sort`, `uniq -c`, `wc -l`, `grep`, and `head`. I also learned how to make scripts executable using `chmod +x` and how Bash scripts can automate repetitive security and system administration tasks. Finally, I switched to Git Bash as my permanent environment for writing and testing Bash scripts instead of relying on temporary TryHackMe machines.
+
+**What confused me:** Bash scripting syntax was quite different from Python, especially variable declaration, command substitution, command-line arguments, and conditional statements. Understanding the purpose of `chmod +x` also took some time initially. Another challenge was realizing that TryHackMe machines are temporary, which made it difficult to maintain projects. Switching to Git Bash provided a permanent environment where I can continue developing and improving my scripts.
+
+**Next Step:** Complete Networking Fundamentals, the final topic of Phase 1, before moving into Core Cybersecurity and building more advanced security tools.
+
