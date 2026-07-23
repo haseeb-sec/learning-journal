@@ -4,7 +4,7 @@
 
 LOG_FILE=$1
 
-if [ -z "LOG_FILE" ]; then
+if [ -z "$LOG_FILE" ]; then
     echo "Usage: ./log_analyzer.sh <logfile>"
     exit 1
 fi
