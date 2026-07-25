@@ -80,6 +80,11 @@ A collection of Linux Bash scripts developed to automate common system administr
 
 ---
 
+### DNS Reconnaissance Tool
+A command-line Python reconnaissance tool that accepts a target domain, performs DNS resolution, verifies website reachability over HTTPS, retrieves WHOIS registration data, extracts the most relevant registration details, and generates a clean reconnaissance report. This project strengthened my understanding of DNS, HTTP/HTTPS communication, WHOIS lookups, Linux command execution from Python using `subprocess`, and practical networking concepts while reinforcing development inside an Ubuntu WSL2 environment.
+
+---
+
 ## Version Control
 
 All projects are managed using Git and published on GitHub. Each project includes source code, documentation, and progress logs to demonstrate my learning process, technical growth, and hands-on experience.

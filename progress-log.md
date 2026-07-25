@@ -161,3 +161,13 @@ our sessions came together in the room questions.
 - Confirmed WSL Version 2 as the default environment
 
 **Next Step:** Continue Phase 1 by completing Networking Fundamentals and begin developing all future Linux, Python, and cybersecurity projects directly inside Ubuntu using WSL2 and Visual Studio Code.
+
+## Python Project - DNS Reconnaissance Tool - 07/25/2026
+
+**What I completed:** Built a CLI-based DNS Reconnaissance Tool in Python that accepts a target domain as a command-line argument, performs DNS resolution, checks whether the website is reachable over HTTPS, retrieves WHOIS information, extracts the most important registration details, and automatically generates a clean reconnaissance report. I also completed the project entirely inside my Ubuntu WSL2 development environment and pushed it to GitHub.
+
+**What I learned:** I learned how to perform DNS lookups using Python's `socket` module, send HTTP requests using the `requests` library, execute Linux commands from Python using `subprocess.run()`, and parse raw WHOIS output into a concise report. Beyond the project itself, I gained practical experience with networking tools such as `traceroute`, `curl`, `dig`, `whois`, and `ufw`, understanding how they relate to DNS resolution, routing, HTTP/HTTPS communication, TLS, and basic firewall management. I also migrated my development workflow completely to Ubuntu WSL2, created and managed Python virtual environments there, and recovered my project after accidentally losing the files before pushing them to GitHub.
+
+**What confused me:** The biggest challenge was understanding the difference between Windows and Ubuntu file systems and working across both environments. Initially, my project was stored in the Windows file system, which caused path and environment confusion until I permanently moved my `learning-journal` into Ubuntu WSL2. I also found `socket.getaddrinfo()` and `subprocess.run()` unfamiliar because they introduced concepts that interact directly with networking and the operating system. Another challenge was connecting networking commands such as `traceroute`, `dig`, `curl`, and `whois` to real cybersecurity investigations instead of viewing them as isolated commands. Working through practical scenarios made these concepts much easier to understand.
+
+**Next Step:** Verify that my existing Bash scripts run correctly inside Ubuntu WSL2 so all projects use a single Linux development environment before continuing with Networking Fundamentals and building more advanced security tools.
