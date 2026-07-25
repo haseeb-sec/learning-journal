@@ -28,16 +28,20 @@ My long-term goal is to become an AI Security Engineer by building strong expert
 
 ## Current Progress
 
-**Phase 1: In Progress (Started June 2026)**
+**Phase 1: Complete ✓ (June – July 2026)**
 
 - Linux Command Line — Complete
 - Python Basics — Complete
 - Log Analyzer — Complete
 - Port Scanner (Multithreaded) — Complete
 - Web Security Header Analyzer — Complete
+- DNS Reconnaissance Tool — Complete
 - Windows Development Environment — Complete
-- WSL2 & Ubuntu Development Environment — Configured
-- Networking Fundamentals — In Progress
+- WSL2 & Ubuntu Development Environment — Primary Environment
+- Networking Fundamentals — Complete
+- Bash/Shell Scripts — Verified on Ubuntu WSL2
+
+**Phase 2: In Progress (Started July 2026)**
 
 ---
 
@@ -51,6 +55,17 @@ My long-term goal is to become an AI Security Engineer by building strong expert
 - GitHub
 
 > **Note:** WSL2 and Ubuntu have been successfully installed and configured as my primary Linux development environment. Future Linux-based projects will be developed using this environment.
+
+My primary development environment is Ubuntu 26.04 LTS running through WSL2.
+
+For every project I:
+
+- Understand the underlying concept first
+- Build a practical implementation
+- Test it on a real Linux environment
+- Document the project with a professional README
+- Record what I learned in my progress log
+- Version everything with Git and GitHub
 
 ---
 
@@ -93,7 +108,9 @@ All projects are managed using Git and published on GitHub. Each project include
 
 ## Learning Philosophy
 
-I believe practical experience is more valuable than simply completing courses. Every project in this repository represents something I have learned, implemented, tested, and documented. My goal is to build a portfolio that demonstrates continuous growth, technical skills, and the ability to solve real-world cybersecurity problems through hands-on development.
+I believe practical experience is more valuable than simply completing courses. Every project in this repository represents something I have learned, implemented, tested, and documented. I focus on understanding concepts before memorizing commands, using each project to reinforce real-world cybersecurity principles through hands-on development.
+
+I measure my progress by the quality of the projects I can build, explain, and improve—not by the number of certificates I collect. Every completed project is version-controlled, documented, and published on GitHub to demonstrate continuous technical growth, practical problem-solving, and a commitment to lifelong learning.
 
 ---
 
