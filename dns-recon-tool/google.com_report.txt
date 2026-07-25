@@ -1,0 +1,29 @@
+=== DNS RECONNAISSANCE REPORT ===
+Date: 2026-07-25 00:27:55.559329
+Target Domain: google.com
+
+--- IP ADDRESSES ---
+142.250.186.14
+2a00:1450:4018:80d::200e
+
+--- REACHABILITY ---
+Status Code: 200
+
+--- WHOIS INFORMATION ---
+Creation Date: 1997-09-15T04:00:00Z
+Registry Expiry Date: 2028-09-14T04:00:00Z
+Registrar: MarkMonitor Inc.
+Name Server: NS1.GOOGLE.COM
+Name Server: NS2.GOOGLE.COM
+Name Server: NS3.GOOGLE.COM
+Name Server: NS4.GOOGLE.COM
+Creation Date: 1997-09-15T07:00:00+0000
+Registrar Registration Expiration Date: 2028-09-13T07:00:00+0000
+Registrar: MarkMonitor, Inc.
+Registrant Organization: Google LLC
+Registrant Country: US
+Name Server: ns4.google.com
+Name Server: ns2.google.com
+Name Server: ns1.google.com
+Name Server: ns3.google.com
+=== END OF REPORT ===
