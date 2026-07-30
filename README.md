@@ -16,6 +16,11 @@ My long-term goal is to become an AI Security Engineer by building strong expert
 
 ### Phase 1: Linux, Networking, and Python (Months 1–3)
 
+### Phase 1.5: Security Foundations
+- CIA Triad (Confidentiality, Integrity, Availability)
+- Professional Security Findings & Reporting
+- Security Assessment Documentation
+
 ### Phase 2: Core Cybersecurity (Months 4–7)
 
 ### Phase 3: Artificial Intelligence and Machine Learning (Months 6–9)
@@ -41,7 +46,13 @@ My long-term goal is to become an AI Security Engineer by building strong expert
 - Networking Fundamentals — Complete
 - Bash/Shell Scripts — Verified on Ubuntu WSL2
 
-**Phase 2: In Progress (Started July 2026)**
+**Phase 1.5: Complete ✓ (July 2026)**
+
+- CIA Triad Fundamentals
+- Professional Security Findings
+- Security Assessment Documentation
+
+**Phase 2: Ready to Begin**
 
 ---
 
@@ -85,7 +96,13 @@ A CLI-based Python port scanner that scans a target IPv4 address across a specif
 
 ### Web Security Header Analyzer
 
-A CLI-based Python security tool that sends HTTP requests to a target website, checks HTTP status codes, analyzes common HTTP security headers, detects server and backend technology disclosure, and generates a professional `web_report.txt` containing the security assessment.
+A CLI-based Python security tool that sends HTTP requests to a target website, checks HTTP status codes, analyzes common HTTP security headers, detects server and backend technology disclosure, and generates a raw `web_report.txt`. Based on the collected evidence, professional security findings are documented separately in `docs/sample-finding.md`, following a real-world security assessment workflow.
+
+---
+
+### DNS Reconnaissance Tool
+
+A command-line Python reconnaissance tool that accepts a target domain, performs DNS resolution, verifies website reachability over HTTPS, retrieves WHOIS registration data, extracts the most relevant registration details, and generates a clean reconnaissance report. This project strengthened my understanding of DNS, HTTP/HTTPS communication, WHOIS lookups, Linux command execution from Python using `subprocess`, and practical networking concepts while reinforcing development inside an Ubuntu WSL2 environment.
 
 ---
 
@@ -95,14 +112,9 @@ A collection of Linux Bash scripts developed to automate common system administr
 
 ---
 
-### DNS Reconnaissance Tool
-A command-line Python reconnaissance tool that accepts a target domain, performs DNS resolution, verifies website reachability over HTTPS, retrieves WHOIS registration data, extracts the most relevant registration details, and generates a clean reconnaissance report. This project strengthened my understanding of DNS, HTTP/HTTPS communication, WHOIS lookups, Linux command execution from Python using `subprocess`, and practical networking concepts while reinforcing development inside an Ubuntu WSL2 environment.
-
----
-
 ## Version Control
 
-All projects are managed using Git and published on GitHub. Each project includes source code, documentation, and progress logs to demonstrate my learning process, technical growth, and hands-on experience.
+All projects are managed using Git and published on GitHub. Each project includes source code, documentation, reports, and progress logs to demonstrate not only the implementation, but also the reasoning, documentation, and security assessment process behind each project.
 
 ---
 
