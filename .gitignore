@@ -1,20 +1,20 @@
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
-*.pyo
 
 # Virtual environments
 venv/
 .venv/
 env/
 
-# VS Code
-.vscode/
+# Environment variables
+.env
 
-# JetBrains IDEs
+# IDEs
+.vscode/
 .idea/
 
-# Operating System
+# Operating system files
 .DS_Store
 Thumbs.db
 
