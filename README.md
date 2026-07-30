@@ -59,7 +59,7 @@ My long-term goal is to become an AI Security Engineer by building strong expert
 ## Development Environment
 
 - Windows 10 Pro
-- Ubuntu 26.04 LTS (WSL2)
+- Ubuntu 24.04 LTS (WSL2)
 - Visual Studio Code
 - Python 3.14
 - Git
@@ -67,7 +67,7 @@ My long-term goal is to become an AI Security Engineer by building strong expert
 
 > **Note:** WSL2 and Ubuntu have been successfully installed and configured as my primary Linux development environment. Future Linux-based projects will be developed using this environment.
 
-My primary development environment is Ubuntu 26.04 LTS running through WSL2.
+My primary development environment is Ubuntu 24.04 LTS running through WSL2.
 
 For every project I:
 
