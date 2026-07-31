@@ -7,20 +7,33 @@ This is a CLI-based Python port scanner that scans a target IPv4 address over a 
 ## Features
 
 - CLI-based Python application
+- Supports command-line arguments using `argparse`
 - Scans a configurable range of TCP ports
 - Supports IPv4 targets
 - Uses multithreading for faster scanning
+- Validates user-supplied port ranges
 - Displays open ports in the terminal
 - Automatically generates a `scan_report.txt` file
 
 ## How to run it
 
-1. Make sure Python 3 is installed on your computer.
-2. Open the Python script and set the target IP address by modifying the `target_ip` variable.
-3. Adjust the port range if needed by changing the values passed to `threaded_scan_target()`.
-4. Open the project folder in Visual Studio Code or any other code editor.
-5. Run the Python script.
-6. After the script finishes, a `scan_report.txt` file will be created automatically in the project folder.
+1. Make sure Python 3 is installed on your system.
+2. Open a terminal inside the project folder.
+3. Run the scanner by specifying the target IPv4 address.
+
+Example:
+
+```bash
+python3 scanner.py 127.0.0.1
+```
+
+To scan a custom port range:
+
+```bash
+python3 scanner.py 127.0.0.1 --start 20 --end 200
+```
+
+After the scan finishes, a `scan_report.txt` file will be generated automatically.
 
 ## What the output looks like
 

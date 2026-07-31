@@ -1,6 +1,7 @@
 # Progress Log — Haseeb Ullah Shah
 
-## Session 1 — 15/06/2026
+## Session 1 
+Date: 15-06-2026
 
 **What I completed:** Configured my Python development environment by installing Git, Visual Studio Code, Python, and creating my learning-journal repository on GitHub. Made my first Git commit and successfully pushed it to GitHub.
 
@@ -10,7 +11,8 @@
 
 **Next step:** Start Phase 1 by learning Linux command-line fundamentals through TryHackMe.
 
-## Session 2 — 18/06/2026
+## Session 2 
+Date: 18-06-2026
 
 **What I completed:** Practiced Linux navigation commands, explored a real web server access log, searched for specific patterns, identified bot traffic, and counted POST requests using standard Linux utilities.
 
@@ -22,7 +24,8 @@ Real-world security connection: Security analysts regularly inspect web server l
 
 **Next step:** Continue Linux Fundamentals by learning file permissions and file management.
 
-## Session 3 — 04/07/2026
+## Session 3 
+Date: 04-07-2026
 
 **What I completed:** Practiced Linux file permissions by creating files, viewing permission settings, and modifying permissions using chmod. Successfully changed file permissions from overly permissive settings to safer defaults.
 
@@ -34,7 +37,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Continue Linux Fundamentals by practicing file creation, copying, moving, and deletion.
 
-## Session 4 — 04/07/2026
+## Session 4 
+Date: 04-07-2026
 
 **What I completed:** Created, copied, moved, renamed, and deleted files and directories using standard Linux commands while practicing independent filesystem management.
 
@@ -46,7 +50,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Learn Linux networking commands and understand how they are used during security investigations.
 
-## Session 5 — 07/07/2026
+## Session 5 
+Date: 07-07-2026
 
 **What I completed:** Investigated a live TryHackMe machine as if it were a compromised Linux server. Identified its IP address, tested external connectivity, examined listening services, inspected active network connections, and verified the integrity of the /etc/hosts file.
 
@@ -60,7 +65,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Complete the Linux Fundamentals Part 1 room on TryHackMe and begin learning Python fundamentals.
 
-## Linux Fundamentals Part 1 — TryHackMe — 07/07/2026
+## Sessoin 6 — Linux Fundamentals Part 1 — TryHackMe 
+Date: 07-07-2026
 
 **What I completed:** Successfully completed the Linux Fundamentals Part 1 room on TryHackMe, reinforcing everything I had previously practiced through hands-on Linux exercises. I answered the room questions independently and gained practical experience using the Linux command line.
 
@@ -74,7 +80,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Begin learning Python fundamentals and start building small automation projects.
 
-## Python Basics — 07/07/2026
+## Session 7 — Python Basics 
+Date: 07-07-2026
 
 **What I completed:** Revised the core Python fundamentals, including variables, data types, loops, conditionals, functions, and file handling. Although I had studied these concepts previously, I completed a focused revision to strengthen my understanding before building real-world security tools.
 
@@ -86,7 +93,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Build my first Python security project by applying these fundamentals to a real-world problem.
 
-## Python Project — Log Analyzer — 07/08/2026
+## Session 8 — Python Project — Log Analyzer 
+Date: 08-07-2026
 
 **What I completed:** Built a CLI-based Log Analyzer in Python that reads a web server `access.log` file, extracts client IP addresses, counts the total requests made by each IP, identifies suspicious IPs based on a configurable request threshold, and automatically generates a clean `report.txt` summarizing the analysis.
 
@@ -99,7 +107,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 **Next step:** Build a multithreaded Python Port Scanner to strengthen my understanding of networking, sockets, and TCP communication.
 
 
-## Python Project — Port Scanner — 07/08/2026
+## Session 9 — Python Project — Port Scanner 
+Date: 08-07-2026
 
 **What I completed:** Built a CLI-based Python Port Scanner that scans a target IP address over a specified range of ports, identifies which ports are open, displays the results in the terminal, and automatically generates a `scan_report.txt` file containing the scan results.
 
@@ -111,7 +120,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Improve the Log Analyzer by adding bot detection, failed login detection, and command-line arguments so it can analyze any log file instead of relying on a hardcoded filename.
 
-## Python Project — Log Analyzer Update — 07/14/2026
+## Session 10 — Python Project — Log Analyzer Update
+Date: 14-07-2026
 
 **What I completed:** Enhanced the Log Analyzer by adding support for command-line arguments using the `sys` module, allowing the program to analyze any log file specified by the user instead of relying on a hardcoded filename. I also added bot and crawler detection by identifying common user-agent keywords such as `Bot`, `bot`, `crawler`, and `spider`. In addition, I implemented failed login detection by analyzing HTTP `401 Unauthorized` responses and flagging IP addresses that exceeded a configurable threshold of failed login attempts. Finally, I updated the generated `report.txt` to include dedicated sections for detected bots and suspicious login attempts, making the report more comprehensive and useful.
 
@@ -123,7 +133,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Add multithreading to the Port Scanner.
 
-## Python Project — Port Scanner (Multithreading Upgrade) — 07/14/2026
+## Session 11 — Python Project — Port Scanner (Multithreading Upgrade)
+Date: 14-07-2026
 
 **What I completed:** Improved my CLI-based Python Port Scanner by implementing multithreading using Python's `threading` module. Instead of scanning ports one by one, the scanner now creates a separate thread for each port, allowing multiple ports to be scanned concurrently. I also updated the project documentation to reflect the new functionality and features.
 
@@ -135,7 +146,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next step:** Build a Web Request Tool using Python's `requests` library.
 
-## Python Project - Web Security Header Analyzer - 07/18/2026
+## Session 12 — Python Project - Web Security Header Analyzer
+Date: 18-07-2026 
 
 **What I completed:** Built a CLI-based Web Security Header Analyzer in Python that accepts a target URL as a command-line argument, sends an HTTP/HTTPS request to the website, checks the HTTP status code, analyzes common HTTP security headers, detects server software and backend technology disclosure, and automatically generates a professional `web_report.txt` file. I also learned how to use a Python virtual environment and manage project dependencies using a `requirements.txt` file.
 
@@ -145,7 +157,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next Step:** Basic shell scripts automating real tasks on Linux.
 
-## Bash Scripting - Linux Security Automation - 07/23/2026
+## Session 13 — Bash Scripting - Linux Security Automation 
+Date: 23-07-2026 
 
 **What I completed:** Built my first Bash scripts for Linux automation and security tasks. I created `myscript.sh` to understand the basics of shell scripting, `sysinfo.sh` to collect system information such as the hostname, current user, IP addresses, open ports, and disk usage, `security_audit.sh` to perform a basic Linux security audit by checking logged-in users, recent login attempts, open ports, and files with full permissions, and `log_analyzer.sh` to analyze web server log files by counting total requests, identifying the most active IP addresses, counting POST requests, and detecting 404 errors.
 
@@ -155,7 +168,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next Step:** Complete Networking Fundamentals, the final topic of Phase 1, before moving into Core Cybersecurity and building more advanced security tools.
 
-## Development Environment Upgrade - WSL2 Ubuntu - 07/23/2026
+## Session 14 — Development Environment Upgrade - WSL2 Ubuntu 
+Date: 23-07-2026
 
 **What I completed:** Upgraded my development environment from Git Bash to a full Linux environment by installing Ubuntu 26.04 LTS through Windows Subsystem for Linux (WSL2). Before installing WSL2, I repaired my Windows 10 installation using an in-place repair upgrade, which restored the missing Windows optional features required for WSL2 while preserving my files, applications, and personal settings. After the repair, I enabled WSL2, installed Ubuntu, created my Linux user account, updated the operating system, installed the latest WSL components, verified Python 3.14 and Git inside Ubuntu, and configured Visual Studio Code to develop directly inside the Linux environment using the Remote - WSL extension.
 
@@ -177,7 +191,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next Step:** Continue Phase 1 by completing Networking Fundamentals and begin developing all future Linux, Python, and cybersecurity projects directly inside Ubuntu using WSL2 and Visual Studio Code.
 
-## Python Project - DNS Reconnaissance Tool - 07/25/2026
+## Session 15 — Python Project - DNS Reconnaissance Tool
+Date: 25-07-2026
 
 **What I completed:** Built a CLI-based DNS Reconnaissance Tool in Python that accepts a target domain as a command-line argument, performs DNS resolution, checks whether the website is reachable over HTTPS, retrieves WHOIS information, extracts the most important registration details, and automatically generates a clean reconnaissance report. I also completed the project entirely inside my Ubuntu WSL2 development environment and pushed it to GitHub.
 
@@ -187,7 +202,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 
 **Next Step:** Verify that my existing Bash scripts run correctly inside Ubuntu WSL2 so all projects use a single Linux development environment before continuing with Networking Fundamentals and building more advanced security tools.
 
-# 25-07-2026 — Phase 1 Completion & Ubuntu WSL2 Migration
+# Session 16 — Phase 1 Completion & Ubuntu WSL2 Migration
+Date: 25-07-2026
 
 ## What I completed
 - Verified all shell scripts on Ubuntu WSL2.
@@ -215,7 +231,8 @@ Real-world security connection: Correct file permissions help protect sensitive 
 - Networking Fundamentals — Completed
 - **Phase 1 — Complete ✓**
 
-# 30-07-2026 — Phase 1.5: CIA Triad & Professional Security Findings
+# Session 17 — Phase 1.5: CIA Triad & Professional Security Findings 
+Date: 30-07-2026
 
 ## What I completed
 - Studied the CIA Triad (Confidentiality, Integrity, and Availability).
@@ -249,6 +266,52 @@ Real-world security connection: Correct file permissions help protect sensitive 
 ## One thing I can now do independently
 - Analyze missing HTTP security headers and write professional security findings based on real assessment results.
 
-## Status
-- **Phase 1.5 — Complete ✓**
-- **Phase 2 — Ready to Begin**
+## Session 18 – Port Scanner Refactoring & CLI Improvements
+Date: 01-08-2026
+
+### What I worked on
+- Replaced hard-coded target IP and port range with argparse.
+- Added command-line arguments for target, start port, and end port.
+- Learned why thread synchronization is important.
+- Protected the shared open_ports list using threading.Lock().
+- Replaced manual socket closing with a context manager (with socket.socket()).
+- Added input validation for invalid port ranges.
+- Sorted scan results before generating the report.
+- Updated the project README to match the new CLI interface.
+
+### What I learned
+- How argparse allows users to configure a program from the command line.
+- Why shared data structures require synchronization in multithreaded programs.
+- How context managers automatically release system resources.
+- Why validating user input makes command-line tools more reliable.
+
+### Challenges
+- Understanding why a Lock was needed even though append() looked simple.
+- Learning how argparse works without modifying the source code for every scan.
+- Testing the scanner by creating a temporary HTTP server on localhost.
+
+### Result
+The Port Scanner now supports configurable command-line usage, thread-safe result collection, proper resource management, and input validation. This project is considered complete for Phase 1.
+
+# Phase 1.5 Completed
+
+Completed Projects - Phase 1 and Phase 1.5:
+- Log Analyzer
+- Multithreaded Port Scanner
+- DNS Recon Tool
+- Web Security Header Analyzer
+
+Key Skills Gained:
+- Python fundamentals
+- File handling
+- Socket programming
+- HTTP requests
+- DNS reconnaissance
+- Multithreading
+- Command-line interfaces (argparse)
+- Thread synchronization (Lock)
+- Technical documentation
+- Basic security reporting
+
+Status:
+Phase 1.5 is complete. Beginning Phase 2.

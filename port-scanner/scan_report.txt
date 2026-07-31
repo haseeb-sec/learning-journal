@@ -1,7 +1,5 @@
 === PORT SCAN REPORT ===
 Target: 127.0.0.1
-Open ports found: 3
+Open ports found: 1
 
-Port 135 - OPEN
-Port 445 - OPEN
-Port 623 - OPEN
+Port 8000 - OPEN

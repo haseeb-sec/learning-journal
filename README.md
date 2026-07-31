@@ -46,11 +46,14 @@ My long-term goal is to become an AI Security Engineer by building strong expert
 - Networking Fundamentals — Complete
 - Bash/Shell Scripts — Verified on Ubuntu WSL2
 
-**Phase 1.5: Complete ✓ (July 2026)**
+**Phase 1.5: Complete ✓ (July-August 2026)**
 
 - CIA Triad Fundamentals
 - Professional Security Findings
 - Security Assessment Documentation
+- Command-Line Interfaces with `argparse`
+- Multithreading and Thread Synchronization (`threading.Lock`)
+- Improved Python CLI Project Design
 
 **Phase 2: Ready to Begin**
 
@@ -90,7 +93,7 @@ A CLI-based Python security tool that analyzes web server log files, counts requ
 
 ### Port Scanner
 
-A CLI-based Python port scanner that scans a target IPv4 address across a specified range of TCP ports. It uses multithreading to improve scanning performance, identifies open ports, displays the results in the terminal, and automatically generates a `scan_report.txt` file.
+A CLI-based Python port scanner that scans a target IPv4 address across a configurable range of TCP ports using command-line arguments. It uses multithreading to improve scanning performance, identifies open ports, validates the supplied port range, displays the results in the terminal, and automatically generates a `scan_report.txt` file.
 
 ---
 
