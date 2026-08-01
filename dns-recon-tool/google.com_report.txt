@@ -1,10 +1,10 @@
 === DNS RECONNAISSANCE REPORT ===
-Date: 2026-07-25 01:03:03.302504
+Date: 2026-08-01 15:25:45.235855
 Target Domain: google.com
 
 --- IP ADDRESSES ---
-2a00:1450:4018:80c::200e
-142.250.186.14
+142.250.202.174
+2a00:1450:4018:810::200e
 
 --- REACHABILITY ---
 Status Code: 200
@@ -22,8 +22,8 @@ Registrar Registration Expiration Date: 2028-09-13T07:00:00+0000
 Registrar: MarkMonitor, Inc.
 Registrant Organization: Google LLC
 Registrant Country: US
-Name Server: ns1.google.com
 Name Server: ns2.google.com
-Name Server: ns3.google.com
 Name Server: ns4.google.com
+Name Server: ns1.google.com
+Name Server: ns3.google.com
 === END OF REPORT ===

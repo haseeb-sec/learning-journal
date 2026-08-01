@@ -86,8 +86,8 @@ This document represents my first verified cybersecurity write-up in Phase 2, bu
 
 - Lockheed Martin. *Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains.*
 - MITRE ATT&CK Framework: https://attack.mitre.org/
-- Microsoft Security Blog (WannaCry Analysis): https://www.microsoft.com/security/blog/
-- CISA Ransomware Guide: https://www.cisa.gov/stopransomware
+- CISA. *Ransomware Guide*: https://www.cisa.gov/stopransomware/ransomware-guide
+- Microsoft Learn – Security Documentation: https://learn.microsoft.com/security/
 
 ## 8. Disclaimer
 
