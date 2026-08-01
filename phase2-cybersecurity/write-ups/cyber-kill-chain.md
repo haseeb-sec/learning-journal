@@ -60,7 +60,7 @@ During the Actions on Objectives stage, the attacker carries out the primary goa
 
 During Phase 1 of my cybersecurity learning journey, I developed several practical tools that support different areas of defensive security. While studying the Cyber Kill Chain, I verified the actual purpose of each tool instead of assuming it belonged to a specific stage. This helped me understand that security tools often serve different functions and do not always map directly to a single Kill Chain stage.
 
-| Tool | Primary Security Function | Relation to the Cyber Kill Chain |
+| Tool | Primary Security Function | Defensive Security Role |
 |------|---------------------------|----------------------------------|
 | Port Scanner | Reconnaissance | Helps defenders identify exposed services and open ports before attackers discover them. |
 | DNS Recon Tool | Reconnaissance | Collects publicly available domain information to help defenders understand and secure their external infrastructure. |
