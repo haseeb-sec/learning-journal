@@ -85,6 +85,15 @@ For every project I:
 
 ## Projects
 
+### 🏛️ Death Committee System
+
+A full-stack financial management platform for community-based mutual death-support committees. Built with FastAPI, SQLAlchemy, React, and TypeScript. Implements double-entry accounting, multi-tenant committee isolation, role-based authorization, JWT authentication, and automated testing.
+
+🔗 **GitHub:** https://github.com/haseeb-sec/death-committee-system
+
+---
+
+
 ### Log Analyzer
 
 A CLI-based Python security tool that analyzes web server log files, counts requests by IP address, detects suspicious activity, identifies bots and crawlers, flags repeated failed login attempts, and automatically generates a detailed security report.
@@ -119,6 +128,18 @@ A command-line Python reconnaissance tool that accepts a target domain, performs
 ### Shell Scripts
 
 A collection of Linux Bash scripts developed to automate common system administration and cybersecurity tasks. This folder includes scripts for gathering system information, performing basic security audits, analyzing web server log files, and learning the fundamentals of Bash scripting, Linux automation, and command-line tools commonly used by security professionals.
+
+---
+
+## Technical Skills
+
+### Languages
+- Python
+- TypeScript
+
+### Areas of Study
+- Full-Stack Application Security
+- REST API Design & Authorization
 
 ---
 
