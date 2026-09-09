@@ -3,6 +3,7 @@
 **Platform:** PortSwigger Web Security Academy
 **Topic:** SQL Injection / UNION Attack
 **Lab:** SQL injection UNION attack, determining the number of columns returned by the query
+**Official Lab:** https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns
 
 ## Objective
 
@@ -21,6 +22,17 @@ SELECT name, price, description FROM products;
 returns three columns: `name`, `price`, and `description`.
 
 A `UNION` combines the results of two SQL queries. For a `UNION` to work, both queries must return the same number of columns.
+
+## Tools Used
+
+- **Browser:** Opened the PortSwigger lab and generated the normal request.
+- **Burp Suite:** Intercepted and analyzed the HTTP request.
+- **HTTP History:** Located the request containing the vulnerable `category` parameter.
+- **Repeater:** Modified and resent the request with different `UNION SELECT` payloads.
+
+The workflow was:
+
+Browser → Burp Suite → HTTP History → Repeater
 
 ## Lab Steps
 
@@ -63,6 +75,15 @@ Determining the column count is an important first step in a **UNION-based SQL i
 The underlying vulnerability is SQL Injection caused by unsafe handling of user input in a database query.
 
 **OWASP:** A03:2021 — Injection
+
+## Evidence
+
+- Vulnerable request: `/filter?category=Accessories`
+- `UNION SELECT NULL` → **HTTP 500 Internal Server Error**
+- `UNION SELECT NULL,NULL,NULL` → **HTTP 200 OK + additional empty row**
+- Confirmed column count: **3**
+- Testing tool: **Burp Suite Repeater**
+- Final result: **Lab solved successfully**
 
 ## Key Takeaway
 

@@ -2,6 +2,8 @@
 
 A practical PortSwigger Web Security Academy lab demonstrating SQL injection through a vulnerable product category query.
 
+**Official Lab:** https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data
+
 ## 1. What the Lab Was
 
 This lab was a practical SQL injection exercise from PortSwigger Web Security Academy.

@@ -7,6 +7,7 @@ Use a UNION-based SQL injection to determine which column in the query result ca
 ## Lab
 
 **PortSwigger Web Security Academy:** SQL injection UNION attack, finding a column containing text.
+**Official Lab:** https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text
 
 ## Tools Used
 

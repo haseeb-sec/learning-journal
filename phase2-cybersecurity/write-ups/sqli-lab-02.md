@@ -2,6 +2,8 @@
 
 A practical PortSwigger Web Security Academy lab demonstrating how SQL injection can bypass authentication.
 
+**Official Lab:** https://portswigger.net/web-security/sql-injection/lab-login-bypass
+
 ## 1. Objective
 
 The objective was to log in as the `administrator` user without knowing the password by exploiting SQL injection in the login form.
@@ -22,7 +24,11 @@ with parameters similar to:
 username=test&password=test
 ```
 
-I captured the request using **Burp Suite**, then sent it to **Repeater** so I could modify and resend it.
+I captured the request through **Burp Suite**, located it in **HTTP history**, and sent it to **Repeater** so I could modify and resend it.
+
+The workflow was:
+
+Browser → Burp Suite → HTTP History → Repeater
 
 ## 3. SQL Injection
 
