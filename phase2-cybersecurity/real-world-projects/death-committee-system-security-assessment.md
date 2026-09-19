@@ -716,14 +716,14 @@ Git was used to keep the security changes traceable and separated from unrelated
 
 ## 18. Final Security Status
 
-The assessment resulted in the following final status:
+The status below records the result of the original focused security assessment described in Sections 1–17.
 
-| Area | Final Status |
+| Area | Assessment Status |
 |---|---|
-| Authentication | Pass |
-| Authorization / RBAC | Pass |
-| IDOR / BOLA | Pass |
-| Privilege escalation | Pass |
+| Authentication | Pass after remediation |
+| Authorization / RBAC | Pass after remediation |
+| IDOR / BOLA | No confirmed issue |
+| Privilege escalation | Pass after remediation |
 | Business logic | Pass after remediation |
 | Financial/accounting integrity | No confirmed issue |
 | API/input security | No confirmed issue |
@@ -733,13 +733,15 @@ The assessment resulted in the following final status:
 | Member-management permissions | Fixed and verified |
 | Backend regression testing | 81/81 passed |
 
-The main confirmed security vulnerability identified during the assessment was the ability to replay a previously issued authentication token after frontend logout.
+The main confirmed security vulnerability identified during the original assessment was the ability to replay a previously issued authentication token after frontend logout.
 
 That vulnerability was remediated through server-side session revocation and verified by replaying the old token after logout and receiving HTTP 401 Unauthorized.
 
 Several additional authorization, business-logic, and application-behavior weaknesses were identified and corrected during the assessment.
 
-No confirmed financial-accounting, IDOR/BOLA, or API-input vulnerability remained at the completion of the assessment.
+No confirmed financial-accounting, IDOR/BOLA, or API-input vulnerability remained at the completion of that assessment.
+
+The 81/81 result is intentionally preserved because it records the regression-suite result at that historical assessment stage. Subsequent security hardening and additional regression coverage are documented in Section 20.
 
 ---
 
@@ -753,17 +755,97 @@ The most significant confirmed issue was the lack of server-side session invalid
 
 Additional access-control and business-logic weaknesses were also corrected.
 
-Following remediation, the backend regression suite completed with 81/81 tests passing.
+Following the original remediation, the backend regression suite completed with 81/81 tests passing.
 
-The final application state therefore represents a significantly stronger security posture than the state at the beginning of the assessment.
+After the original assessment, the project underwent additional security hardening and regression testing. Those changes are documented separately in Section 21 rather than being mixed into the historical assessment record.
 
-This assessment also provides a documented example of a complete security workflow:
+The current project state therefore represents a later security baseline than the 81/81 assessment result recorded above.
+
+This assessment and the subsequent hardening provide a documented example of a complete security workflow:
 
 **Test → Identify → Reproduce → Assess impact → Remediate → Retest → Regression test → Document**
 
 ---
 
-## 20. Related Resources
+---
+
+## 20. Post-Assessment Security Hardening
+
+After the original assessment documented in Sections 1–19, additional security review and hardening were performed against the project.
+
+These changes are recorded separately so that the original assessment results remain historically accurate.
+
+### Authentication and session security
+
+Additional verification and hardening included:
+
+- JWT signature, expiry, subject, and required-claim validation.
+- Token-version validation for server-side session revocation.
+- Regression coverage for expired, tampered, incomplete, and revoked JWTs.
+- Password-reset token expiry and single-use verification.
+- Password-length policy enforcement.
+- Login rate limiting for repeated failed authentication attempts.
+
+### Authorization and access control
+
+The authorization model was reviewed across the registered API routers and resource boundaries.
+
+Additional work included:
+
+- Explicit separation of authorization failures from resource-level accounting errors.
+- Correct HTTP 403 handling for permission failures where appropriate.
+- Continued committee-level isolation and member/resource ownership checks.
+- Review of cross-committee and cross-member authorization coverage.
+- Verification that administrative operations remain restricted to the appropriate roles.
+
+### Financial and business-logic integrity
+
+Additional integrity controls were reviewed and tested for:
+
+- Committee asset valuation chronology.
+- Member good valuation chronology.
+- Settlement and death-support date ordering.
+- Settlement snapshot consistency.
+- Inactive-member financial operations.
+- Contribution-rate effective-date uniqueness.
+- Committee asset valuation-date uniqueness.
+- Member good valuation-date uniqueness.
+
+For valuation history, uniqueness is enforced at both the application/model level and the database schema level where appropriate.
+
+### Security configuration and HTTP protections
+
+Additional application hardening included:
+
+- Configurable CORS origins.
+- Production configuration validation for the JWT secret and token expiry.
+- Security response headers including `X-Content-Type-Options`, `X-Frame-Options`, and `Referrer-Policy`.
+- Verification that real environment files and local development artifacts are excluded from source control.
+
+### Dependency and repository security
+
+The project was additionally checked for:
+
+- Backend dependency vulnerabilities using `pip-audit`.
+- Frontend dependency vulnerabilities using `npm audit`.
+- Dependency consistency with `pip check`.
+- Accidental tracking of databases, environment files, build artifacts, caches, backups, and temporary development files.
+- Automated CI checks for backend tests, frontend checks, and dependency security scanning.
+
+### Current verification baseline
+
+The current backend regression suite contains **103 passing tests**.
+
+The original assessment's 81/81 result should therefore be understood as a historical checkpoint, while 103/103 represents the later verified baseline after additional security hardening and regression coverage.
+
+The current project remains an active portfolio/development application and is not presented as a production security certification or guarantee.
+
+---
+
+---
+
+## 21. Related Resources
+
 
 ### Application Repository
 
